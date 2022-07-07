@@ -19,10 +19,10 @@ public class RedisSampleService {
 		return stringValueOperations.get(key);
 	}
 
-
 	public void setRedisStringValue(String key, String value) {		        
 		ValueOperations<String, String> stringValueOperations = stringRedisTemplate.opsForValue();        		
-
+		
 		stringValueOperations.set(key, value);			
 	}
+		
 }
